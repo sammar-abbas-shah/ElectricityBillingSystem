@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <!-- LoginForm -->
+    <Compile Update="LoginForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="LoginForm.Designer.cs"><DependentUpon>LoginForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="LoginForm.resx"><DependentUpon>LoginForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- DashboardForm -->
+    <Compile Update="DashboardForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="DashboardForm.Designer.cs"><DependentUpon>DashboardForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="DashboardForm.resx"><DependentUpon>DashboardForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- UserPortalForm -->
+    <Compile Update="UserPortalForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="UserPortalForm.Designer.cs"><DependentUpon>UserPortalForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="UserPortalForm.resx"><DependentUpon>UserPortalForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- UsersForm -->
+    <Compile Update="UsersForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="UsersForm.Designer.cs"><DependentUpon>UsersForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="UsersForm.resx"><DependentUpon>UsersForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- CustomersForm -->
+    <Compile Update="CustomersForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="CustomersForm.Designer.cs"><DependentUpon>CustomersForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="CustomersForm.resx"><DependentUpon>CustomersForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- ConsumptionForm -->
+    <Compile Update="ConsumptionForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="ConsumptionForm.Designer.cs"><DependentUpon>ConsumptionForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="ConsumptionForm.resx"><DependentUpon>ConsumptionForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- BillForm -->
+    <Compile Update="BillForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="BillForm.Designer.cs"><DependentUpon>BillForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="BillForm.resx"><DependentUpon>BillForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- PaymentForm -->
+    <Compile Update="PaymentForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="PaymentForm.Designer.cs"><DependentUpon>PaymentForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="PaymentForm.resx"><DependentUpon>PaymentForm.cs</DependentUpon></EmbeddedResource>
+
+    <!-- ReportsForm -->
+    <Compile Update="ReportsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="ReportsForm.Designer.cs"><DependentUpon>ReportsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="ReportsForm.resx"><DependentUpon>ReportsForm.cs</DependentUpon></EmbeddedResource>
+
+  </ItemGroup>
+
+</Project>
